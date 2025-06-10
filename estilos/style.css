@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 255, 0.452);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#oi {
+    background-color: white;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-column-end: 5;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 15px black;
+}
+
+#oi h1 {
+    text-align: center;
+}
+
+#inp {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-template-rows: 1;
+    grid-template-rows: 3;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+#inp input {
+    padding-left: 3px;
+}
+
+#maca {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-left: 10px;
+}
+
+#botao {
+    width: 70px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#limp {
+    width: 70px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#sam {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 3;
+    padding: 10px;
+}
